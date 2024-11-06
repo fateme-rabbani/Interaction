@@ -24,7 +24,7 @@ function App() {
           {interactionList.map((item) => (
             <button
               onClick={() => setSelectedInteraction(item.name)}
-              style={{ background: "#ECFEFD", padding: 5 }}
+              style={{ background: "#ECFEFD", padding: 5, borderRadius: 5 }}
             >
               {item.name}
             </button>
@@ -40,12 +40,19 @@ function App() {
                 .component
             }
           />
-          <button
-            style={{ background: "#ECFEFD", padding: 10, marginLeft: "auto" }}
-            onClick={() => setSelectedInteraction(null)}
-          >
-            back
-          </button>
+          <div className="flex gap-4 justify-end">
+            <button
+              style={{ background: "#ECFEFD", padding: 10, borderRadius: 5 }}
+              onClick={() => setSelectedInteraction(null)}
+            >
+              back
+            </button>
+            <button
+              style={{ background: "#1AC0AE", padding: 10, borderRadius: 5 }}
+            >
+              submit
+            </button>
+          </div>
         </>
       )}
     </div>

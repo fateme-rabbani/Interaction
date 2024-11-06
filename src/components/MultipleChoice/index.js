@@ -20,7 +20,7 @@ const MultipleChoiceInteractionStudio = () => {
         style={{
           background: "#ECFEFD",
           padding: 5,
-          borderRadius: 3,
+          borderRadius: 5,
           width: 120,
         }}
         onClick={() => setValue(value + 1)}
