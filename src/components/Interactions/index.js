@@ -27,6 +27,12 @@ const Interactions = ({ selectedInteraction }) => {
               </div>
             ))}
         </div>
+        <label for="tag">tags</label>
+        <select name="tag" id="tag">
+          <option value="physics">Physics</option>
+          <option value="history">History</option>
+          <option value="chemistry">Chemistry</option>
+        </select>
       </div>
     </div>
   );
